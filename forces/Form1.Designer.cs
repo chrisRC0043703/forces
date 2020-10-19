@@ -34,7 +34,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.forces2 = new System.Windows.Forms.TabControl();
+            this.Forces1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.forces2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -91,11 +95,43 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 6;
             // 
+            // forces2
+            // 
+            this.forces2.Controls.Add(this.Forces1);
+            this.forces2.Controls.Add(this.tabPage2);
+            this.forces2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.forces2.Location = new System.Drawing.Point(0, 0);
+            this.forces2.Name = "forces2";
+            this.forces2.SelectedIndex = 0;
+            this.forces2.Size = new System.Drawing.Size(800, 450);
+            this.forces2.TabIndex = 7;
+            // 
+            // Forces1
+            // 
+            this.Forces1.Location = new System.Drawing.Point(4, 22);
+            this.Forces1.Name = "Forces1";
+            this.Forces1.Padding = new System.Windows.Forms.Padding(3);
+            this.Forces1.Size = new System.Drawing.Size(792, 424);
+            this.Forces1.TabIndex = 0;
+            this.Forces1.Text = "tabPage1";
+            this.Forces1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 424);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.forces2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -106,6 +142,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.forces2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,6 +156,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabControl forces2;
+        private System.Windows.Forms.TabPage Forces1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
 
