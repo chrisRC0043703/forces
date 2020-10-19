@@ -49,15 +49,17 @@ namespace forces
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            //use try -catch to avoid input errors
             try
             {
+                //read vaues for force and angle from textboxes 
 
                 double Force = double.Parse(textBox2.Text);
                 double Angle = double.Parse(textBox1.Text);
-
+                //calculate Fx and Fy using equations Fx = Fcos and Fy = Fsin
                 double Fx = Force * cos(Angle);
                 double Fy = Force * sin(Angle);
-
+                //Output solutions to label1 and label2
                 label1.Text = "Fx = " + Fx;
                 label2.Text = "Fy = " + Fy;
             }
