@@ -49,9 +49,24 @@ namespace forces
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            double X = double.Parse(textBox2.Text);
-            double angle = sin(X);
-            label1.Text = "Angle = " + angle;
+            double Force = double.Parse(textBox1.Text);
+            double Angle = double.Parse(textBox2.Text);
+
+            double Fx = Force * cos(Angle);
+            double Fy = Force * sin(Angle);
+
+            label1.Text = "Fx = " + Fx;
+            label2.Text = "Fy = " + Fy;
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
