@@ -78,5 +78,32 @@ namespace forces
         {
 
         }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            //use try -catch to stop input errors
+            try
+            {
+                //read values from textbox
+                double Fx = double.Parse(textBox4.Text);
+                double Fy = double.Parse(textBox3.Text);
+                //calculate Fx and Fy using equations Fx = Fcos and Fy = Fsin
+                double Force = Math.Sqrt(Fx * Fx + Fy * Fy);
+                double Angle = atan(Fy / Fx);
+                //Output solutions to label7 and label3
+                label7.Text = "Fx = " + Angle;
+                label3.Text = "Fy = " + Force;
+            }
+            catch
+            {
+                MessageBox.Show("Error on input");
+            }
+        }
+        
     }
 }
